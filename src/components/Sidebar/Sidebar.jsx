@@ -21,7 +21,7 @@ function Sidebar({setPokemons}) {
     addPokemon(event.currentTarget);
   }
 
-  const types = ["grass", "fire", "water", "electric", "steel"];
+  const types = ["poison","electric","ground","fairy","fire","normal","flying","grass","water","bug","fighting","psychic","rock","steel","ice","ghost","dragon"];
 
   return (
     <div className="sidebar">
@@ -37,11 +37,11 @@ function Sidebar({setPokemons}) {
             <input name="pokemon[encounter]" placeholder="route 1" aria-describedby="pokemon-encounter" type="text" className="form-control" />
           </div>
           <div className="mb-3">
-            { types.map((type) => {
+          { types.map((criterion) => {
               return (
-                <React.Fragment key={type}>
-                  <input name="pokemon[types][]" type="checkbox" className="btn-check" id={types} autoComplete="off" value={types}/>
-                  <label className="btn btn-outline-success btn-sm mx-1 mb-1" htmlFor={types}>{types}</label>
+                <React.Fragment key={criterion}>
+                  <input name="pokemon[types][]" type="checkbox" className="btn-check" id={criterion} autoComplete="off" value={criterion}/>
+                  <label className="btn btn-outline-danger btn-sm mx-1 mb-1" htmlFor={criterion}>{criterion}</label>
                 </React.Fragment>
               );
             }) }
@@ -51,7 +51,7 @@ function Sidebar({setPokemons}) {
             <input name="pokemon[pictures]" type="text" className="form-control" aria-describedby="pokemon-picture" placeholder='http://example.com/image.jpg'/>
           </div>
           <div className="d-grid">
-            <button type="submit" className="btn btn-success">Send to Oak</button>
+            <button type="submit" className="btn btn-danger">Send to Oak</button>
           </div>
         </form>
       </div>

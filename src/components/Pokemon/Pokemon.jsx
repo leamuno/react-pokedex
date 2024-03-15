@@ -8,6 +8,12 @@ function Pokemon({pokemon}) {
       <div>
         <div>
           <h5>{pokemon.name}</h5>
+          <p>
+            { pokemon.types .map( crit => <span key={crit}>{crit}</span>)}
+          </p>
+          <p>
+            Location: { pokemon.encounter}
+          </p>
         </div>
       </div>
     </div>

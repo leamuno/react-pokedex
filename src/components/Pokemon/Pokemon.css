@@ -29,6 +29,11 @@
   flex-wrap: wrap;
   gap: 4px;
   align-items: center;
+  text-transform: capitalize;
+}
+
+.pokemon-card h5 {
+  text-transform: capitalize;
 }
 
 .pokemon-card p > span {
@@ -38,6 +43,7 @@
   border-radius: 4px;
   font-size: 12px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .pokemon-card > div > a {
