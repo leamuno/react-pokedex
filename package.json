@@ -1,7 +1,7 @@
 {
   "name": "react-workshop-feb2024",
   "private": true,
-  "homepage": "https://leamuno.github.io/react-pokedex/",
+  "homepage": "https://leamuno.github.io/react-pokedex",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
