@@ -4,7 +4,7 @@ import logo from '../../assets/logo_w_context2.png';
 
 function Sidebar({setPokemons}) {
   function addPokemon(form) {
-    const url = "https://poke-api-9fa88e523c2a.herokuapp.com/api/v1/pokemons";
+    const url = "https://poke-api-97bb8825da70.herokuapp.com/api/v1/pokemons";
     fetch(url, {
       method: "POST",
       body: new FormData(form)
