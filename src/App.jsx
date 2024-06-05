@@ -9,7 +9,7 @@ function App() {
   const [keyword, setKeyword] = React.useState("");
 
   React.useEffect(() => {
-    const url = "https://poke-api-9fa88e523c2a.herokuapp.com/api/v1/pokemons";
+    const url = "https://poke-api-97bb8825da70.herokuapp.com/api/v1/pokemons";
     const params = (keyword !== "") ? `?title=${keyword}` : "";
     fetch(url + params)
       .then(response => response.json())
