@@ -31,10 +31,14 @@ function Sidebar({setPokemons}) {
           <div className="input-group mb-3">
             <span className="input-group-text" id="pokemon-name"><i className="fa-solid fa-mug-saucer form-icons"></i></span>
             <input name="pokemon[name]" placeholder="pikachu" type="text" className="form-control" aria-describedby="pokemon-name" />
-            </div>
+          </div>
+          <div className="input-group mb-3">
+            <span className="input-group-text" id="pokemonID"><i className="fa-solid fa-mug-saucer form-icons"></i></span>
+            <input name="pokemon[pokemonID]" placeholder="25" type="text" className="form-control" aria-describedby="pokemonID" />
+          </div>
           <div className="input-group mb-3">
             <span className="input-group-text" id="pokemon-encounter"><i className="fa-solid fa-location-dot form-icons"></i></span>
-            <input name="pokemon[encounter]" placeholder="route 1" aria-describedby="pokemon-encounter" type="text" className="form-control" />
+            <input name="pokemon[encounter]" placeholder="veridian forest" aria-describedby="pokemon-encounter" type="text" className="form-control" />
           </div>
           <div className="mb-3">
           { types.map((criterion) => {

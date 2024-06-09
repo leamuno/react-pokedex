@@ -9,12 +9,14 @@ function App() {
   const [keyword, setKeyword] = React.useState("");
 
   React.useEffect(() => {
-    const url = "https://poke-api-97bb8825da70.herokuapp.com/api/v1/pokemons";
+    const url = "https://nf07ey28qa.execute-api.ap-northeast-1.amazonaws.com/prod/pokemons";
     const params = (keyword !== "") ? `?title=${keyword}` : "";
     fetch(url + params)
       .then(response => response.json())
       .then((data) => {
-        setPokemons(data);
+        const objs = data["pokemons"];
+        objs.sort((a,b) => (a.dexId > b.dexId) ? 1 : ((b.dexId > a.dexId) ? -1 : 0));
+        setPokemons(objs);
       });
   }, [keyword]);
 
