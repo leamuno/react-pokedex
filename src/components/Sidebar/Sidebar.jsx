@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Sidebar.css";
-import logo from '../../assets/logo_w_context2.png';
 
 function Sidebar({ setPokemons }) {
   function addPokemon(form) {
@@ -60,19 +59,19 @@ function Sidebar({ setPokemons }) {
         <form onSubmit={handleSubmit}>
           <div className="input-group mb-3">
             <span className="input-group-text" id="pokemonID"><i className="fa-solid fa-mug-saucer form-icons"></i></span>
-            <input name="pokemon[pokemonID]" placeholder="152" type="text" className="form-control" aria-describedby="pokemonID" />
+            <input name="pokemon[pokemonID]" placeholder="25" type="text" className="form-control" aria-describedby="pokemonID" />
           </div>
           <div className="input-group mb-3">
             <span className="input-group-text" id="name"><i className="fa-solid fa-mug-saucer form-icons"></i></span>
-            <input name="pokemon[name]" placeholder="chikorita" type="text" className="form-control" aria-describedby="name" />
+            <input name="pokemon[name]" placeholder="pikachu" type="text" className="form-control" aria-describedby="name" />
           </div>
           <div className="input-group mb-3">
             <span className="input-group-text" id="dexId"><i className="fa-solid fa-mug-saucer form-icons"></i></span>
-            <input name="pokemon[dexId]" placeholder="152" type="text" className="form-control" aria-describedby="dexId" />
+            <input name="pokemon[dexId]" placeholder="25" type="text" className="form-control" aria-describedby="dexId" />
           </div>
           <div className="input-group mb-3">
             <span className="input-group-text" id="location"><i className="fa-solid fa-location-dot form-icons"></i></span>
-            <input name="pokemon[location]" placeholder="new bark town area" aria-describedby="location" type="text" className="form-control" />
+            <input name="pokemon[location]" placeholder="veridian forest" aria-describedby="location" type="text" className="form-control" />
           </div>
           <div className="input-group mb-3">
             <select className="input-group-text" id="type1" name="pokemon[type1]" aria-label="type1">
@@ -109,7 +108,6 @@ function Sidebar({ setPokemons }) {
           </div>
         </form>
       </div>
-      <img src={logo} alt="keyboard and matcha logo" />
     </div>
   );
 }
