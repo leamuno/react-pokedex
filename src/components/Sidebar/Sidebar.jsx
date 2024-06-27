@@ -74,6 +74,7 @@ function Sidebar({ setPokemons }) {
             <input name="pokemon[location]" placeholder="veridian forest" aria-describedby="location" type="text" className="form-control" />
           </div>
           <div className="input-group mb-3">
+            <span className="input-group-text" id="name">Type 1</span>
             <select className="input-group-text" id="type1" name="pokemon[type1]" aria-label="type1">
               {types.map((criterion) => {
                 return (
@@ -85,6 +86,7 @@ function Sidebar({ setPokemons }) {
             </select>
           </div>
           <div className="input-group mb-3">
+            <span className="input-group-text" id="name">Type 1</span>
             <select className="input-group-text" id="type2" name="pokemon[type2]" aria-label="type2">
               {types.map((criterion) => {
                 return (
